@@ -49,6 +49,7 @@ blockquote, q {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+
 }
 
 body {
@@ -148,6 +149,11 @@ input, select, textarea {
 			font-style: normal;
 			font-weight: 300;
 		}
+	
+	h1 {
+		font-size: 2em;
+		letter-spacing: -0.025em;
+	}
 
 	h2 {
 		font-size: 1.75em;
@@ -1960,7 +1966,7 @@ input, select, textarea {
 
 	header p {
 		color: #999;
-		font-size: 1.25em;
+		font-size: 1em;
 		position: relative;
 		margin-top: -1.25em;
 		margin-bottom: 2.25em;
@@ -2089,12 +2095,18 @@ input, select, textarea {
 			}
 
 		.image.fit {
-			display: block;
+			vertical-align: middle;
+			position: relative;
 		}
 
 			.image.fit img {
-				display: block;
-				width: 100%;
+
+				margin-top: 1em;
+				margin-bottom: 1em;
+				height: auto;
+				width: auto;
+				text-align: center;
+				max-height: 7em;
 			}
 
 		.image.featured {
@@ -2366,11 +2378,14 @@ input, select, textarea {
 /* Tables */
 
 	table {
-		width: 100%;
+		width: 50%;
 	}
 
 		table.default {
-			width: 100%;
+			width: 50%;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 			table.default tbody tr {
@@ -2386,6 +2401,10 @@ input, select, textarea {
 				padding: 0.5em 1em 0.5em 1em;
 				text-align: left;
 			}
+
+			table.default tr:nth-child(odd) {
+				background-color: #dddddd;
+			  }
 
 			table.default thead {
 				background-color: #555555;
@@ -2531,12 +2550,7 @@ input, select, textarea {
 
 	#header {
 		text-align: center;
-		padding: 3em 0 0 0;
-		background-color: #fff;
-		background-image: url("images/bg02.png"), url("images/bg02.png"), url("images/bg01.png");
-		background-position: top left,					top left,					top left;
-		background-size: 100% 6em,					100% 6em,					auto;
-		background-repeat: no-repeat,					no-repeat,					repeat;
+		background-color: rgb(0, 0, 0);
 	}
 
 		#header h1 {
@@ -2552,12 +2566,7 @@ input, select, textarea {
 
 	#nav {
 		cursor: default;
-		background-color: #333;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
-		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
-		padding: 0;
+		background-color: rgb(0, 0, 0);
 	}
 
 		#nav:after {
@@ -2584,7 +2593,7 @@ input, select, textarea {
 					text-decoration: none;
 					border: 0;
 					display: block;
-					padding: 1.5em 0.5em 1.35em 0.5em;
+					padding: 0.5em 0.5em 1.35em 0.5em;
 				}
 
 				#nav > ul > li:first-child {
@@ -2635,11 +2644,7 @@ input, select, textarea {
 /* Dropotron */
 
 	.dropotron {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0)), url("images/bg01.png");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0)), url("images/bg01.png");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0)), url("images/bg01.png");
-		background-image: linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0)), url("images/bg01.png");
-		background-color: #333;
+		background-color: rgb(0, 0, 0);
 		border-radius: 5px;
 		color: #fff;
 		min-width: 10em;
@@ -2717,6 +2722,52 @@ input, select, textarea {
 				margin-left: 1em;
 			}
 
+/* Events banner */
+
+	#bannerE {
+		background-image: url("../../images/banner.jpg");
+		background-position: center center;
+		background-size: cover;
+		height: 20em;
+		text-align: center;
+		position: relative;
+		text-size-adjust: auto;
+	}
+
+		#bannerE header {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 100%;
+			width: 45%;
+			background: #212121;
+			background: rgba(27, 27, 27, 0.60);
+			color: #fff;
+			padding: 1.5em 1.5em;
+		}
+
+			#bannerE header h1 {
+				display: inline-block;
+				margin: 0;
+				font-size: auto;
+				vertical-align: middle;
+				text-size-adjust: auto;
+				max-width: 30em;
+			}
+
+			#bannerE header p {
+				display: inline-block;
+				margin: 0;
+				font-size: 15px;
+				vertical-align: middle;
+				overflow-wrap: normal;
+			}
+			
+				#bannerE header p a {
+					color: #fff;
+				}
+
+			
 /* Wrapper */
 
 	.wrapper {
