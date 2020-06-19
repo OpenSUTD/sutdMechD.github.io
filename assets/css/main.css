@@ -2091,7 +2091,7 @@ input, select, textarea {
 
 			.image.left img {
 				display: block;
-				width: 100%;
+				width: 75%;
 			}
 
 		.image.fit {
@@ -2870,13 +2870,23 @@ input, select, textarea {
 				line-height: 1.5em;
 			}
 
+
 		/* Banner */
 
 			#banner {
 				height: 24em;
 			}
 
-	}
+			
+		/* Header */
+
+		#header p {
+			padding: 0 0 1.75em 0;
+			display: none;
+		}
+			
+
+}
 
 /* Normal */
 
