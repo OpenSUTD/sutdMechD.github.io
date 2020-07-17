@@ -2120,6 +2120,18 @@ input, select, textarea {
 				width: 75%;;
 			}
 
+		.image.body {
+			display: block;
+			margin: 0 0 2em 0;
+			text-align: center;
+		}
+
+			.image.body img {
+				display: block;
+				width: 60%;
+				text-align: center;;
+			}
+
 /* Icon */
 
 	.icon {
